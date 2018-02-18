@@ -1,0 +1,88 @@
+body {
+  width: 275px;
+  height: 350px;
+  margin: 0px;
+  overflow: hidden;
+  background-color: #BBBBBB;
+}
+
+
+#content {
+  color: #F5F5F5;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 40px;
+}
+
+
+#time-header {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+
+#time {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+
+#time-descriptors {
+  list-style: none;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+
+#time-descriptors li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+
+img {
+  outline: none;
+  cursor: pointer;
+}
+
+
+img:hover {
+  opacity: 0.7;
+}
+
+
+#add-link {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 120px;
+  bottom: 50px;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  background-color: white;
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  overflow: auto; /* Enable scroll if needed */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #f9f9eb;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    margin-left: 15px;
+}
+
+
+#close {
+  cursor: pointer;
+}

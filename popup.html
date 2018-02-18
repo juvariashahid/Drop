@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Procrastination Timer</title>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+  </head>
+  <body>
+    <!--Separate Modal that pops up when user wants to add link-->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p id="close">&times;</p>
+        <div class="buttons">
+          <button type="button" id="add-button">Add current url</button>
+          <button type="button" id="delete-button">Delete current url</button>
+        </div>
+        <ul id="links"></ul>
+      </div>
+    </div>
+
+    <!--Home screen content-->
+    <div id="content">
+      <h1 id="time-header">Time Wasted</h1>
+      <p id="time">00:00:00</p>
+      <ul id="time-descriptors">
+        <li>hour</li>
+        <li>min</li>
+        <li>sec</li>
+      </ul>
+      <p id="hour">Total number of hours:</p>
+      <p id="hours"></p>
+      <img src="img/add.png" alt="add" id="add-link">
+    </div>
+
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+  </body>
+</html>
+
