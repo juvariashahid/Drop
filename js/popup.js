@@ -121,7 +121,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     }, 1000);
+
+    setInterval(function() {
+
+      //get total time and display it in the dom
+      var hours = chrome.extension.getBackgroundPage().getHours();
+      document.getElementById("hours").innerHTML = hours;
+
+    }, 1000);
     
-    var hours = chrome.extension.getBackgroundPage().getHours();
-    document.getElementById("hours").innerHTML = hours;
+    
 });

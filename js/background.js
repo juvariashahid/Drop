@@ -1,16 +1,18 @@
 
 
 //total time user spends on certain websites
-var totalTime = 0;
+var totalTime=0;
+var hours = 0; 
+
 //list of sites timer runs on
 var urls = [];
-var hours = Math.floor(totalTime/3600);
+
 
 
 //this function is called from the background
 //script and runs for as long as chrome is open
 function updateTime() {
-
+  
   //timer only runs on windows that are open and active
   var queryInfo = {
     active: true,
@@ -43,6 +45,7 @@ function updateTime() {
 
         if (domain != urls[i]) {
           totalTime++;
+          hours = Math.floor(totalTime/5);
         }
       }
 
@@ -94,4 +97,4 @@ function getHours() {
 
 
 updateTime();
-console.log(totalTime);
+
