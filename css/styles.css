@@ -11,7 +11,7 @@ p {
 }
 
 #content {
-  color: #AFEEEE;
+  color: #7fdbdb;
   font-family: 'Roboto', sans-serif;
   padding-top: 40px;
 }
@@ -37,7 +37,7 @@ p {
 }
 
 
-#gallons {
+#hours {
   text-align: center;
   font-size: 20px;
   margin-bottom: 0px;
@@ -56,9 +56,13 @@ p {
   margin-right: 40px;
 }
 
+a img {
+    border: none;
+}
 
 img {
   outline: none;
+  border:none;
   cursor: pointer;
 }
 
