@@ -1,14 +1,17 @@
 body {
   width: 275px;
-  height: 350px;
+  height: 400px;
   margin: 0px;
   overflow: hidden;
-  background-color: #BBBBBB;
+  background-color: #FFFFFF;
 }
 
+p {
+  margin-top: 0px;
+}
 
 #content {
-  color: #F5F5F5;
+  color: #AFEEEE;
   font-family: 'Roboto', sans-serif;
   padding-top: 40px;
 }
@@ -16,7 +19,7 @@ body {
 
 #time-header {
   text-align: center;
-  color: white;
+  color: #4E94A9;
   font-size: 25px;
 }
 
@@ -24,6 +27,19 @@ body {
 #time {
   text-align: center;
   font-size: 50px;
+  margin-bottom: 0px;
+}
+
+#gallon-header {
+  text-align: center;
+  color: #4E94A9;
+  font-size: 15px;
+}
+
+
+#gallons {
+  text-align: center;
+  font-size: 20px;
   margin-bottom: 0px;
 }
 
@@ -75,7 +91,7 @@ img:hover {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #f9f9eb;
+    background-color: #FFFFFF;
     padding: 10px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
